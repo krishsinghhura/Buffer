@@ -1,0 +1,41 @@
+*{
+    background-color: black;
+}
+
+.box2{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 250px;
+    left: 625px;
+    border-radius: 60%;
+    border-right: 5px white solid;
+    animation-name: buffer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 2s;
+}
+.box3{
+    height: 50px;
+    width: 40px;
+    position: absolute;
+    top: 250px;
+    left: 625px;
+    border-radius: 60%;
+    border-left: 5px white solid;
+    animation-name: buffer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transition: 2s;
+}
+@keyframes buffer{
+    from{
+        transform: skew(0px);
+        transform: rotate(0deg);
+    }
+    to{
+        transform: skew(40deg);
+        transform: rotate(360deg);
+    }
+}
